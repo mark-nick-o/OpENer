@@ -49,7 +49,9 @@ typedef enum {
   kEncapsulationCommandRegisterSession = 0x0065, /**< only allowed for TCP */
   kEncapsulationCommandUnregisterSession = 0x0066, /**< only allowed for TCP */
   kEncapsulationCommandSendRequestReplyData = 0x006F, /**< only allowed for TCP */
-  kEncapsulationCommandSendUnitData = 0x0070 /**< only allowed for TCP */
+  kEncapsulationCommandSendUnitData = 0x0070, /**< only allowed for TCP */
+  kEncapsulationCommandIndicateStatus = 0x0072, /**< only allowed for TCP */
+  kEncapsulationCommandCancel = 0x0073 /**< only allowed for TCP */    
 } EncapsulationCommand;
 
 /** @brief definition of capability flags */
